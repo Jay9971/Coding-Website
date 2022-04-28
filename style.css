@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.48), rgba(2, 2, 2, 0.52)),  url(Images/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.navbar{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 200%; 
+    padding: 10px;
+   border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+.navbar a:hover{
+    background-color: #a6ccff;
+    
+    border: 2px solid black;
+    color: black;
+}
+.navbar li{
+    display: inline;
+    margin-right: 2%;
+}
+header h1{
+    font-size: 600%;
+    text-align: center;
+    padding-top: 12.5%;
+    height: 600px;
+    color: white;
+}
+#section-1{
+    background-color: #fcfcfc;
+}
+.general-info{
+     padding-bottom: 5%;
+}
+.general-info h1{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 350%; 
+    border-bottom: 3px solid #a6ccff;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+p{
+    font-size: 150%;
+    line-height: 200%;
+}
+.general-info p{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.icons{
+    text-align: center;
+}
+.icon{
+    font-size: 900%;
+    color: #a6ccff;
+    margin-right: 2%;
+}
+#section-3{
+    background-color: #fcfcfc;
+
+}
+#section-3 p{
+    text-align: center; 
+}
+.icon2{
+    margin-top: 2%;
+    font-size: 600%;
+    color: #a6ccff;
+    margin-right: 1%;
+}
+footer p{
+    padding-left: 1%;
+    background-color: #8aaede;
+    color: white;
+}
