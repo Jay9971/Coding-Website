@@ -13,6 +13,16 @@ header{
     padding-top: 2%;
     padding-left: 2%;
 }
+#search-bar{
+    position: relative;
+    width: 277px;
+    height: 35px;
+    left: 80px;
+    bottom: 10px;
+}
+::placeholder{
+    color: black;
+}
 .navbar a{
     text-decoration: none;
     color: #ffffff;
@@ -26,6 +36,9 @@ header{
     
     border: 2px solid black;
     color: black;
+}
+.navbar input:hover{
+    border: 2px solid black;
 }
 .navbar li{
     display: inline;
