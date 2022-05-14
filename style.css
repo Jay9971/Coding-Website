@@ -14,11 +14,8 @@ header{
     padding-left: 2%;
 }
 #search-bar{
-    position: relative;
     width: 277px;
     height: 35px;
-    left: 80px;
-    bottom: 10px;
 }
 ::placeholder{
     color: black;

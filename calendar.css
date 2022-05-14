@@ -30,11 +30,11 @@
     margin-right: 2%;
 }
 #search-bar{
-    position: relative;
+    /*position: relative;*/
     width: 277px;
     height: 35px;
-    left: 80px;
-    bottom: 10px;
+    /*left: 80px;*/
+    /*bottom: 10px;*/
 }
 .icon2{
     margin-top: 2%;
@@ -80,7 +80,7 @@ body {font-family: Verdana, sans-serif;}
   padding: 0;
 }
 
-.month ul li {
+.month ul button li {
   color: white;
   font-size: 400%;
   text-transform: uppercase;
@@ -89,12 +89,16 @@ body {font-family: Verdana, sans-serif;}
 
 .month .prev {
   float: left;
-  padding-top: 10px;
+  height: 70px;
+  width: 70px;
+  font-size: 50px;
 }
 
 .month .next {
   float: right;
-  padding-top: 10px;
+  height: 70px;
+  width: 70px;
+  font-size: 50px;
 }
 
 .weekdays {
