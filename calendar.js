@@ -1,6 +1,6 @@
 //calendar interactivity
 
-const templateMonths = [
+let templateMonths = [
 {
     name: 'January',
     days: 31,
@@ -65,14 +65,39 @@ function Next() {
             month.innerText = templateMonths[i + 1].name;
             for (var n = 0; n < templateMonths[i].days; n++) {
                 var day = document.getElementById('day');
+                var year = document.getElementById('year');
+                //archive mod data
+                if (templateMonths[i].hasOwnProperty('mods') && day.innerText.length > 2) {
+                    let pack = [day.innerText, year.innerText];
+                    templateMonths[i].mods.push(pack);
+                } else if (day.innerText.length > 2) {
+                    templateMonths[i].mods = [];
+                    let pack = [day.innerText, year.innerText];
+                    templateMonths[i].mods.push(pack);
+                }
                 day.remove();
             }
             for (var n = 0; n < templateMonths[i + 1].days; n++) {
+                var year = document.getElementById('year');
                 var day = document.createElement('li');
                 dawn = document.getElementById('dawn');
                 dawn.appendChild(day);
                 day.innerText = String(n + 1);
                 day.setAttribute('id', 'day');
+                //reinburse mod data
+                if (templateMonths[i + 1].hasOwnProperty('mods')) {
+                    for (let t=0; t < templateMonths[i + 1].mods.length; t++) {
+                        if (t < 10) {
+                            var theval = templateMonths[i + 1].mods[t][0][0];
+                        } else {
+                            var theval = templateMonths[i + 1].mods[t][0][0];
+                            theval = theval + templateMonths[i + 1].mods[t][0][1];
+                        }
+                        if (day.innerText == theval && year.innerText == templateMonths[i + 1].mods[t][1]) {
+                            day.innerText = templateMonths[i + 1].mods[t][0];
+                        }
+                    }
+                }
             }
             break;
         }
@@ -94,16 +119,46 @@ function Prev() {
             month.innerText = templateMonths[i - 1].name;
             for (var n = 0; n < templateMonths[i].days; n++) {
                 var day = document.getElementById('day');
+                var year = document.getElementById('year');
+                //archive mod data
+                if (templateMonths[i].hasOwnProperty('mods') && day.innerText.length > 2) {
+                    let pack = [day.innerText, year.innerText];
+                    templateMonths[i].mods.push(pack);
+                } else if (day.innerText.length > 2) {
+                    templateMonths[i].mods = [];
+                    let pack = [day.innerText, year.innerText];
+                    templateMonths[i].mods.push(pack);
+                }
                 day.remove();
             }
             for (var n = 0; n < templateMonths[i - 1].days; n++) {
+                var year = document.getElementById('year');
                 var day = document.createElement('li');
                 dawn = document.getElementById('dawn');
                 dawn.appendChild(day);
                 day.innerText = String(n + 1);
                 day.setAttribute('id', 'day');
+                //reinburse mod data
+                if (templateMonths[i - 1].hasOwnProperty('mods')) {
+                    for (let t=0; t < templateMonths[i - 1].mods.length; t++) {
+                        if (t < 10) {
+                            var theval = templateMonths[i - 1].mods[t][0][0];
+                        } else {
+                            var theval = templateMonths[i - 1].mods[t][0][0];
+                            theval = theval + templateMonths[i - 1].mods[t][0][1];
+                        }
+                        if (day.innerText == theval && year.innerText == templateMonths[i - 1].mods[t][1]) {
+                            day.innerText = templateMonths[i - 1].mods[t][0];
+                        }
+                    }
+                }
             }
             break;
         }
     }
+}
+
+function Pop(id) {
+    var popup = document.getElementById(id);
+    popup.classList.toggle("show");
 }

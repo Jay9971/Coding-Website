@@ -1,0 +1,12 @@
+<li>
+    <section id="sec1">
+        <img src="Images/logo.png" id="img1">
+                
+        <span id="text">
+            <h1>Template</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris. Egestas congue quisque egestas diam in arcu cursus. Vitae congue mauris rhoncus aenean vel. Viverra adipiscing at in tellus. Massa eget egestas purus viverra accumsan. Turpis egestas sed tempus urna et. Vel turpis nunc eget lorem dolor. Sollicitudin ac orci phasellus egestas tellus rutrum. In hac habitasse platea dictumst vestibulum rhoncus. In dictum non consectetur a erat nam at lectus urna. Eu turpis egestas pretium aenean. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Proin sed libero enim sed. Elementum integer enim neque volutpat ac. Placerat orci nulla pellentesque dignissim. Amet tellus cras adipiscing enim eu. Hac habitasse platea dictumst vestibulum rhoncus. Sed egestas egestas fringilla phasellus faucibus.</p>
+        </span>
+                
+        <img src="Images/logo.png" id="img2">
+    </section>
+</li>

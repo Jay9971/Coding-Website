@@ -4,6 +4,9 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+body {
+  background: #1a8ebc;
+}
 .navbar{
     padding-top: 2%;
     padding-left: 2%;
@@ -11,7 +14,7 @@
 .navbar a{
     text-decoration: none;
     color: #ffffff;
-    font-size: 200%; 
+    font-size: 1.8vw; 
     padding: 10px;
    border-radius: 50px;
     border: 2px solid rgba(0, 0, 0, 0);
@@ -31,8 +34,8 @@
 }
 #search-bar{
     /*position: relative;*/
-    width: 277px;
-    height: 35px;
+    width: 20vw;
+    height: 2vw;
     /*left: 80px;*/
     /*bottom: 10px;*/
 }
@@ -146,4 +149,48 @@ body {font-family: Verdana, sans-serif;}
 .extra{
     width: 1650px;
     height: 20px;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 260px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 20%;
+  margin-left: -80px;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+footer p{
+  padding: 0.6% 0% 0.6% 1%;
+  background-color: #8aaede;
+  color: white;
+  margin-top: 5%;
+  font-size: 1.5vw;
 }

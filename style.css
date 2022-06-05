@@ -14,8 +14,8 @@ header{
     padding-left: 2%;
 }
 #search-bar{
-    width: 277px;
-    height: 35px;
+    width: 20vw;
+    height: 2vw;
 }
 ::placeholder{
     color: black;
@@ -23,7 +23,7 @@ header{
 .navbar a{
     text-decoration: none;
     color: #ffffff;
-    font-size: 200%; 
+    font-size: 1.8vw; 
     padding: 10px;
    border-radius: 50px;
     border: 2px solid rgba(0, 0, 0, 0);
