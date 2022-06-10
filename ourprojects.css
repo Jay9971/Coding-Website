@@ -79,7 +79,7 @@ ul li{
     margin: 1% 0% 0% 2%;
     position: absolute;
     float: left;
-    background-color: rgb(170, 163, 231);
+    background: rgb(165, 158, 224);
     width: 150%;
     right: 0.1%;
 }

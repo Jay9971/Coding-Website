@@ -1,6 +1,6 @@
 //calendar interactivity
 
-let templateMonths = [
+const templateMonths = [
 {
     name: 'January',
     days: 31,
