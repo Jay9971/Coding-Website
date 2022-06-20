@@ -4,8 +4,8 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-body {
-  background: #1a8ebc;
+header {
+  background: /*#1a8ebc*/ linear-gradient(to right, rgba(0, 0, 0, 0.48), rgba(2, 2, 2, 0.52)),  url(Images/background.jpg);
 }
 .navbar{
     padding-top: 2%;
@@ -20,7 +20,7 @@ body {
     border: 2px solid rgba(0, 0, 0, 0);
 }
 .navbar a:hover{
-    background-color: #a6ccff;
+    background-color: #5090e2;
     
     border: 2px solid black;
     color: black;
@@ -57,9 +57,9 @@ body {
     color: black;
 }
 header{
-    background:linear-gradient(to right, rgb(26, 142, 188), rgb(26, 142, 188));
+    /*background:linear-gradient(to right, rgb(26, 142, 188), rgb(26, 142, 188));*/
     background-attachment: fixed;
-    background-size: cover; 
+    background-size: cover;
 }
 header h1{
     font-size: 400%;
@@ -72,10 +72,12 @@ ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
 .month {
+  color: #ffffff;
   padding: 30px 25px;
   width: 100%;
-  background: #1a8ebc;
+  /*background: #1a8ebc;*/
   text-align: center;
+  padding-bottom: 6%;
 }
 
 .month ul {
