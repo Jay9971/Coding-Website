@@ -136,6 +136,16 @@ footer p{
     right: 20%;
     font-family: Roboto Slab, monospace;
 }
+#titleR1 {
+    font-size: 1vw; 
+    margin-bottom: 2vw;  
+}
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    #titleR1 {
+        font-size: 0.5vw;
+    }
+}
 #textR2 {
     position: absolute; 
     left: 63vw; 
